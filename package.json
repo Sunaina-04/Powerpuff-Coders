@@ -1,31 +1,25 @@
 {
-  "name": "incident-reporting-app",
-  "private": true,
-  "version": "0.0.0",
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "npx nodemon src/server.js",
+    "start": "node src/server.js"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@react-google-maps/api": "^2.20.8",
-    "axios": "^1.13.2",
-    "leaflet": "^1.9.4",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "react-leaflet": "^5.0.0"
+    "@upstash/ratelimit": "^2.0.5",
+    "@upstash/redis": "^1.34.9",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2",
+    "install": "^0.13.0",
+    "mongoose": "^7.0.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@types/react": "^19.2.5",
-    "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.1",
-    "eslint": "^9.39.1",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "eslint-plugin-react-refresh": "^0.4.24",
-    "globals": "^16.5.0",
-    "vite": "^7.2.4"
+    "nodemon": "^3.1.11"
   }
 }
